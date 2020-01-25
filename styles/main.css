@@ -1,0 +1,29 @@
+/* overview style (the section with the picture)*/
+
+.overview-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.overview-img {
+  padding: 1rem;
+}
+
+/* section style */
+
+.section-div {
+  margin: 4rem 0;
+}
+
+.section-div h3, hr {
+  margin-left: 1rem;
+}
+
+.section-div p,ul,.item {
+  margin-left: 2rem;
+}
+
+.section-div .item {
+  padding-top: 1.5rem;
+}

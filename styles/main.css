@@ -1,29 +1,58 @@
-/* overview style (the section with the picture)*/
+:root {
+  --spacer: 1rem;
+}
 
-.overview-div {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: var(--spacer);
+  line-height: 1.2;
+  min-height: 100%;
+}
+
+body > * + * {
+  margin-top: calc(var(--spacer) * 2.5);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1.2rem;
+  line-height: 0.8;
+  margin: 0;
+}
+
+p {
+  margin-top: 0.5rem;
+}
+
+section {
+  max-width: 70rem;
+}
+
+.overview {
   display: flex;
-  flex-direction: row;
   align-items: center;
 }
 
-.overview-img {
-  padding: 1rem;
+.overview > * + * {
+  margin-left: var(--spacer);
 }
 
-/* section style */
-
-.section-div {
-  margin: 4rem 0;
+.overview__content {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.section-div h3, hr {
-  margin-left: 1rem;
-}
-
-.section-div p,ul,.item {
-  margin-left: 2rem;
-}
-
-.section-div .item {
-  padding-top: 1.5rem;
+.overview__rule {
+  width: 100%;
+  margin-top: auto;
 }
